@@ -24,7 +24,7 @@ The Facebook Comments plugin is not an option: Meta discontinued it on 2026-02-1
 
 ## Donations
 
-GitHub Sponsors for the organization (`github.com/sponsors/uSuite`) and Ko-fi (`ko-fi.com/usuite`). Both links are marked `data-todo` in `index.html` until the accounts exist; the organization-wide Sponsor button comes from `FUNDING.yml` in the `.github` repository.
+Ko-fi at `ko-fi.com/usuite` is live. The GitHub Sponsors card for the organization (`github.com/sponsors/uSuite`) is in `index.html` with `hidden` until GitHub approves the profile; then remove `hidden` and the `data-todo`, and add `github: [uSuite]` to `FUNDING.yml` in the `.github` repository, which gives every uSuite repository its Sponsor button.
 
 ## Sharing on Facebook
 
