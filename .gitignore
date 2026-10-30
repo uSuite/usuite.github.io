@@ -1,0 +1,5 @@
+# macos stuff
+.DS_Store
+
+# the session log is local, not published
+docs/local/
