@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>uSuite: small Mac tools that each do one job well</title>
+<meta name="description" content="uSuite is a set of small, open-source macOS utilities: native, keyboard-first, plain text, nothing uploaded. Its first family, sSuite, turns work done on screen into step-by-step evidence and guides.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#1b1e23">
+<link rel="canonical" href="https://usuite.github.io/">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+<!-- Link previews on Facebook, LinkedIn, Mastodon, Slack, iMessage. Absolute URLs are required. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="uSuite">
+<meta property="og:url" content="https://usuite.github.io/">
+<meta property="og:title" content="uSuite: small Mac tools that each do one job well">
+<meta property="og:description" content="Native, keyboard-first, plain text, nothing uploaded. sView, sNotate, sPaste and friends, open source under MIT.">
+<meta property="og:image" content="https://usuite.github.io/assets/img/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The uSuite logo and the six sSuite app icons">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-row">
+    <a class="brand" href="#top" aria-label="uSuite home">
+      <img src="assets/img/usuite.png" alt="" width="32" height="32">
+      <span>uSuite</span>
+    </a>
+    <nav aria-label="Sections">
+      <a href="#tools">Tools</a>
+      <a href="#rules">Rules</a>
+      <a href="#voices">Voices</a>
+      <a href="#support">Support</a>
+      <a href="#about">About</a>
+      <a class="nav-gh" href="https://github.com/uSuite">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow"><span class="dot b"></span><span class="dot a"></span><span class="dot g"></span> Open source for macOS</p>
+    <h1>Small Mac tools that each do one job well.</h1>
+    <p class="lede">uSuite is Ur Suite, your suite: native, keyboard-first utilities with plain-text settings and nothing uploaded. Its first family, <strong>sSuite</strong>, turns work done on screen into step-by-step evidence and guides.</p>
+    <div class="cta">
+      <a class="btn primary" href="#tools">See the tools</a>
+      <a class="btn" href="https://github.com/uSuite">Browse the source</a>
+    </div>
+    <ul class="family" aria-label="The family">
+      <li><a href="#sview"><img src="assets/img/sview.png" alt="" width="88" height="88"><span>sView</span></a></li>
+      <li><a href="#snotate"><img src="assets/img/snotate.png" alt="" width="88" height="88"><span>sNotate</span></a></li>
+      <li><a href="#scapture"><img src="assets/img/scapture.png" alt="" width="88" height="88"><span>sCapture</span></a></li>
+      <li><a href="#swalk"><img src="assets/img/swalk.png" alt="" width="88" height="88"><span>sWalk</span></a></li>
+      <li><a href="#spaste"><img src="assets/img/spaste.png" alt="" width="88" height="88"><span>sPaste</span></a></li>
+      <li><a href="#scommon"><img src="assets/img/scommon.png" alt="" width="88" height="88"><span>scommon</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="tools">
+  <div class="wrap">
+    <h2>One chain, one plain folder per case</h2>
+    <p class="intro">You walk through a procedure on screen and need to hand over evidence or a guide: every screen at the same size, numbered in order, marked up with arrows and counters that continue from step to step, a caption per step, and easy to fix when step 7 turns out wrong. Viewers show one folder, screenshot editors flatten one image at a time, and step recorders keep your captures in their cloud. sSuite is a chain of small tools around a folder you own.</p>
+
+    <ol class="chain" aria-label="The evidence chain">
+      <li style="--c:var(--green)"><img src="assets/img/scapture.png" alt="" width="48" height="48"><b>Capture</b><span>sCapture</span></li>
+      <li style="--c:var(--blue)"><img src="assets/img/sview.png" alt="" width="48" height="48"><b>View</b><span>sView</span></li>
+      <li style="--c:var(--amber)"><img src="assets/img/snotate.png" alt="" width="48" height="48"><b>Notate</b><span>sNotate</span></li>
+      <li style="--c:var(--violet)"><img src="assets/img/swalk.png" alt="" width="48" height="48"><b>Walk</b><span>sWalk</span></li>
+    </ol>
+
+    <article class="tool" id="sview" style="--c:var(--blue)">
+      <div class="tool-text">
+        <header><img src="assets/img/sview.png" alt="" width="64" height="64"><div><h3>sView</h3><span class="badge ok">0.2 &middot; download</span></div></header>
+        <p class="job">A super-fast image viewer you drive from the keyboard, and the reader of the chain.</p>
+        <ul>
+          <li>About 210 ms from launch to the first image and 16 ms to the next on an M-series Mac.</li>
+          <li>Vim grammar: counts, <kbd>gg</kbd> and <kbd>G</kbd>, marks, <kbd>/</kbd> to filter, a <kbd>:</kbd> line with completion.</li>
+          <li><kbd>]</kbd> and <kbd>[</kbd> jump between case folders; the case memo sits beside the captures.</li>
+          <li>Everything ImageIO decodes, animated GIF and WebP, side-by-side compare. It never changes a file.</li>
+        </ul>
+        <div class="links"><a class="btn primary" href="https://github.com/uSuite/sview/releases/latest">Download</a><a class="btn" href="https://github.com/uSuite/sview">Source</a></div>
+      </div>
+      <figure class="shots">
+        <img src="assets/shots/viewer.png" alt="sView showing a capture with the thumbnail strip and the info panel" width="1200" height="760" loading="lazy">
+        <div class="thumbs">
+          <img src="assets/shots/sidebar.png" alt="The folder sidebar with image counts" width="1200" height="760" loading="lazy">
+          <img src="assets/shots/memo.png" alt="The case memo next to a capture" width="1200" height="760" loading="lazy">
+        </div>
+      </figure>
+    </article>
+
+    <article class="tool flip" id="snotate" style="--c:var(--amber)">
+      <div class="tool-text">
+        <header><img src="assets/img/snotate.png" alt="" width="64" height="64"><div><h3>sNotate</h3><span class="badge ok">0.2 &middot; download</span></div></header>
+        <p class="job">Annotates a whole case folder as one story and exports one image per step.</p>
+        <ul>
+          <li>Arrows, counters that keep counting across steps, text, highlight, spotlight, blur and crop on single keys.</li>
+          <li>A storyboard of every step with its caption from the memo; drag to reorder, paste to insert.</li>
+          <li>Annotations live in a JSON sidecar, so they stay editable forever and diff in git.</li>
+          <li>Exports PNG or JPEG per step, a contact sheet, and a Typst fragment; headless with <code>snotate --export</code>.</li>
+        </ul>
+        <div class="links"><a class="btn primary" href="https://github.com/uSuite/snotate/releases/latest">Download</a><a class="btn" href="https://github.com/uSuite/snotate">Source</a></div>
+      </div>
+      <figure class="shots">
+        <img src="assets/shots/canvas.png" alt="A step with numbered counters and an arrow" width="1200" height="760" loading="lazy">
+        <div class="thumbs one">
+          <img src="assets/shots/storyboard.png" alt="The storyboard with captions from the memo" width="1200" height="760" loading="lazy">
+        </div>
+      </figure>
+    </article>
+
+    <div class="cards">
+      <article class="card" id="scapture" style="--c:var(--green)">
+        <header><img src="assets/img/scapture.png" alt="" width="56" height="56"><div><h3>sCapture</h3><span class="badge">proof of concept</span></div></header>
+        <p>Captures a window at a fixed size and scale into the active case folder and shows the step count in the menu bar. A shell proof of concept today; the Swift app is next.</p>
+        <a href="https://github.com/uSuite/scapture">Follow on GitHub</a>
+      </article>
+      <article class="card" id="swalk" style="--c:var(--violet)">
+        <header><img src="assets/img/swalk.png" alt="" width="56" height="56"><div><h3>sWalk</h3><span class="badge">planned</span></div></header>
+        <p>Renders a notated case as an animated step-by-step clip with subtitles, with no video editor involved. The last link of the chain.</p>
+        <a href="https://github.com/uSuite">Watch the organization</a>
+      </article>
+      <article class="card" id="scommon" style="--c:var(--slate)">
+        <header><img src="assets/img/scommon.png" alt="" width="56" height="56"><div><h3>scommon</h3><span class="badge ok">0.3</span></div></header>
+        <p>The Swift package the tools share: case folders, natural sort, the <code>key value</code> config and the vim-style keymap grammar. Tested first, tagged per change.</p>
+        <a href="https://github.com/uSuite/scommon">Read the source</a>
+      </article>
+    </div>
+
+    <h2 class="sub">Beside the chain</h2>
+    <article class="tool" id="spaste" style="--c:var(--grape)">
+      <div class="tool-text">
+        <header><img src="assets/img/spaste.png" alt="" width="64" height="64"><div><h3>sPaste</h3><span class="badge ok">0.1 &middot; download</span></div></header>
+        <p class="job">A clipboard history in a panel on <kbd>Shift</kbd><kbd>Cmd</kbd><kbd>C</kbd> that you walk with vim keys.</p>
+        <ul>
+          <li>A normal mode: <kbd>j</kbd> and <kbd>k</kbd>, counts, <kbd>/</kbd> from the newest copy, <kbd>?</kbd> from the oldest.</li>
+          <li>Filters by type and time: <kbd>fi</kbd> images, <kbd>ff</kbd> files, <kbd>ft</kbd> text, <code>:since 2h</code>.</li>
+          <li>The history is a plain folder you can read; deleting an item removes its file.</li>
+        </ul>
+        <div class="links"><a class="btn primary" href="https://github.com/uSuite/spaste/releases/latest">Download</a><a class="btn" href="https://github.com/uSuite/spaste">Source</a></div>
+      </div>
+      <figure class="shots">
+        <div class="panel" role="img" aria-label="A sketch of the sPaste panel filtered to text since two hours ago">
+          <div class="panel-bar"><span>sPaste</span><code>ft :since 2h</code></div>
+          <ol>
+            <li class="sel"><kbd>1</kbd> kubectl get nodes -o wide</li>
+            <li><kbd>2</kbd> https://github.com/uSuite</li>
+            <li><kbd>3</kbd> Step 7: open Settings, then Storage</li>
+            <li><kbd>4</kbd> 10.0.12.40</li>
+            <li><kbd>5</kbd> make test &amp;&amp; make smoke</li>
+          </ol>
+          <div class="panel-foot"><span>j k move</span><span>/ newest</span><span>? oldest</span><span>Enter copy</span></div>
+        </div>
+      </figure>
+    </article>
+
+    <details class="install">
+      <summary>Installing: the first open is blocked once</summary>
+      <p>Each download is a universal app for macOS 26 or newer. The apps are signed ad hoc, not notarised by Apple, so macOS stops the first open with "Apple could not verify". Choose Done, then allow it once:</p>
+      <ul>
+        <li>System Settings &gt; Privacy &amp; Security, next to the line saying the app was blocked, choose Open Anyway.</li>
+        <li>Or in Terminal: <code>xattr -dr com.apple.quarantine /Applications/sView.app</code> (use the app's name).</li>
+      </ul>
+      <p>Every tool also builds from source with Xcode 26. A sponsorship is what pays for a Developer ID, which removes this step for everyone.</p>
+    </details>
+  </div>
+</section>
+
+<section class="section alt" id="rules">
+  <div class="wrap">
+    <h2>The rules every tool follows</h2>
+    <div class="rules">
+      <div><h3>One job per tool</h3><p>sCapture never edits, sNotate never captures, sView never changes a file.</p></div>
+      <div><h3>The folder is the document</h3><p>A case is a folder of captures with a memo beside them. No database, no library, no account.</p></div>
+      <div><h3>Plain text everywhere</h3><p>Settings, keymaps, sidecars and memos are text you can read, diff and keep in git.</p></div>
+      <div><h3>Originals are never touched</h3><p>Exports go to their own folder, and deleting means the Trash.</p></div>
+      <div><h3>Keyboard first</h3><p>One vim-style key grammar shared by every tool, and every command is in the menu bar too.</p></div>
+      <div><h3>Native and fast</h3><p>Swift and Apple frameworks only, no third-party dependencies, measured start-up and frame times.</p></div>
+      <div><h3>Local and private</h3><p>Nothing is uploaded and nothing phones home. This page has no analytics and sets no cookies either.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="voices">
+  <div class="wrap">
+    <h2>What people say</h2>
+    <p class="intro">Posts and reviews from around the web, each linked to where it was said. Wrote about a tool? Tag <b>#uSuite</b> or open an issue with the link, and it may appear here.</p>
+    <div class="voices" id="voices-list" aria-live="polite">
+      <p class="empty">No posts yet. Be the first: try a tool and say what you think.</p>
+    </div>
+
+    <div class="share">
+      <h3>Share uSuite</h3>
+      <div class="share-row" id="share-row">
+        <a data-share="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fusuite.github.io%2F">Facebook</a>
+        <a data-share="x" href="https://x.com/intent/post?url=https%3A%2F%2Fusuite.github.io%2F&amp;text=Small%20Mac%20tools%20that%20each%20do%20one%20job%20well">X</a>
+        <a data-share="bluesky" href="https://bsky.app/intent/compose?text=Small%20Mac%20tools%20that%20each%20do%20one%20job%20well%20https%3A%2F%2Fusuite.github.io%2F">Bluesky</a>
+        <a data-share="linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fusuite.github.io%2F">LinkedIn</a>
+        <a data-share="reddit" href="https://www.reddit.com/submit?url=https%3A%2F%2Fusuite.github.io%2F&amp;title=uSuite%3A%20small%20Mac%20tools%20that%20each%20do%20one%20job%20well">Reddit</a>
+        <a data-share="hn" href="https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fusuite.github.io%2F&amp;t=uSuite%3A%20small%20Mac%20tools%20that%20each%20do%20one%20job%20well">Hacker News</a>
+        <button type="button" id="copy-link">Copy link</button>
+      </div>
+    </div>
+
+    <div class="discuss">
+      <h3>Comments and ideas</h3>
+      <p>Comments are kept in GitHub Discussions on this site's repository, so they stay open and searchable. Sign in with GitHub to post; the comment box loads from giscus.app when you scroll here.</p>
+      <div id="giscus" data-repo="uSuite/usuite.github.io" data-repo-id="" data-category="Comments" data-category-id="">
+        <p class="empty">Comments open soon. Meanwhile, start a thread in <a href="https://github.com/orgs/uSuite/discussions">uSuite Discussions</a> or open an issue on a tool.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="support">
+  <div class="wrap">
+    <h2>Support the work</h2>
+    <p class="intro">Every tool is free and stays free. Money goes first to an Apple Developer ID (so the apps open without the security detour), then to time for sCapture and sWalk.</p>
+    <div class="cards two">
+      <a class="card give" href="https://github.com/sponsors/uSuite" hidden data-todo="remove hidden once GitHub approves the Sponsors profile">
+        <h3>GitHub Sponsors</h3>
+        <p>Monthly or one-time, no fee taken by GitHub. The Sponsor button also shows on every uSuite repository.</p>
+        <span class="btn primary">Sponsor on GitHub</span>
+      </a>
+      <a class="card give" href="https://ko-fi.com/usuite">
+        <h3>Ko-fi</h3>
+        <p>Buy a coffee with a card or PayPal, no GitHub account needed and no fee on one-off tips.</p>
+        <span class="btn primary">Tip on Ko-fi</span>
+      </a>
+    </div>
+    <p class="free">Free ways that help just as much: star a repository, share this page, and report what breaks.</p>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap two-col">
+    <div>
+      <h2>About</h2>
+      <p>uSuite is built by one person, an infrastructure and cloud architect who spends a lot of time proving that things work, one screen at a time. The tools started as a way to make that evidence faster to capture, annotate and hand over, and grew into a small family with shared rules.</p>
+      <p>The name: sSuite is the family, with an s for super-fast and for Swift. The name was taken on GitHub, so the organization is uSuite: Ur Suite, since it is open source and yours to shape, or Utilities Suite, since that is what it holds.</p>
+      <p>Everything is MIT licensed, and the source of every tool is on <a href="https://github.com/uSuite">GitHub</a>.</p>
+    </div>
+    <div id="contribute">
+      <h2>Contribute</h2>
+      <p>Every repository is small and kept by one person, so each contribution is felt. You do not need to write Swift to help:</p>
+      <ul class="steps">
+        <li><b>Report a bug.</b> What you did, what you expected, what happened, with your macOS and tool version.</li>
+        <li><b>Suggest an idea.</b> Open an issue first for anything large, so we agree before you spend the time.</li>
+        <li><b>Send a fix.</b> Branch off <code>develop</code>, keep <code>make test</code> green, one change per commit.</li>
+        <li><b>Improve the docs.</b> Plain text, one paragraph per line.</li>
+      </ul>
+      <div class="links">
+        <a class="btn primary" href="https://github.com/uSuite/.github/blob/master/CONTRIBUTING.md">Read CONTRIBUTING</a>
+        <a class="btn" href="https://github.com/search?q=org%3AuSuite+is%3Aissue+is%3Aopen&amp;type=issues">Open issues</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-row">
+    <span>uSuite &middot; MIT licensed &middot; no analytics, no cookies</span>
+    <span><a href="https://github.com/uSuite">GitHub</a> &middot; <a href="https://github.com/uSuite/usuite.github.io">This page's source</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
