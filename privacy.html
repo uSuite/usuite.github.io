@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy: uSuite</title>
+<meta name="description" content="The uSuite apps collect nothing and have no network code. Here is every folder each app reads and writes on your Mac, and when.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#1b1e23">
+<link rel="canonical" href="https://usuite.github.io/privacy.html">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-row">
+    <a class="brand" href="./" aria-label="uSuite home">
+      <img src="assets/img/usuite.png" alt="" width="32" height="32">
+      <span>uSuite</span>
+    </a>
+    <nav aria-label="Sections">
+      <a href="./#tools">Tools</a>
+      <a class="nav-gh" href="https://github.com/uSuite">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="section">
+  <div class="wrap">
+    <h2>Privacy</h2>
+    <p class="intro">The uSuite apps collect nothing. They have no network code, so nothing is sent, uploaded or counted, and there is no account. This page has no analytics and sets no cookies. What each app does write stays on your Mac, in the folders listed below.</p>
+
+    <h2 class="sub">Not sandboxed yet</h2>
+    <p class="intro">The current releases do not run in the App Sandbox, so macOS does not ask before an app writes its own settings folder. The next minor version of each app moves into the sandbox. After that it asks once for each folder you open, keeps its own files in its container, and moves your current settings there on first launch.</p>
+
+    <div class="cards two privacy">
+      <article class="card" style="--c:var(--blue)">
+        <header><img src="assets/img/sview.png" alt="" width="40" height="40"><h3>sView</h3></header>
+        <ul>
+          <li><code>~/.config/sview/</code> on first launch: config, keymap, last session.</li>
+          <li>In the folders you open, only when you ask: rename, move to the Trash, the marked names.</li>
+          <li>No permissions.</li>
+        </ul>
+        <a href="https://github.com/uSuite/sview#what-it-reads-and-writes">The full list</a>
+      </article>
+      <article class="card" style="--c:var(--amber)">
+        <header><img src="assets/img/snotate.png" alt="" width="40" height="40"><h3>sNotate</h3></header>
+        <ul>
+          <li><code>~/.config/snotate/</code> on first launch: config, keymap, styles.</li>
+          <li>In the case folder you open: the annotation sidecar, memo captions and <code>notated/</code>. Captures are never rewritten.</li>
+          <li>No permissions.</li>
+        </ul>
+        <a href="https://github.com/uSuite/snotate#what-it-reads-and-writes">The full list</a>
+      </article>
+      <article class="card" style="--c:var(--grape)">
+        <header><img src="assets/img/spaste.png" alt="" width="40" height="40"><h3>sPaste</h3></header>
+        <ul>
+          <li><code>~/.config/spaste/</code> on first launch: config, keymap.</li>
+          <li><code>~/Library/Application Support/sPaste/history/</code>, readable only by you. Password manager items are never stored.</li>
+          <li>Accessibility, only for paste on Enter.</li>
+        </ul>
+        <a href="https://github.com/uSuite/spaste#what-it-reads-and-writes">The full list</a>
+      </article>
+      <article class="card" style="--c:var(--green)">
+        <header><img src="assets/img/scapture.png" alt="" width="40" height="40"><h3>sCapture</h3></header>
+        <ul>
+          <li><code>~/.config/scapture/</code> on first launch: config, keymap, profiles, state, capture log.</li>
+          <li><code>~/Pictures/scapture/</code> by default: a folder per case, a PNG per capture you take.</li>
+          <li>Screen Recording to capture, Accessibility to place windows.</li>
+        </ul>
+        <a href="https://github.com/uSuite/scapture#what-it-reads-and-writes">The full list</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-row">
+    <span>uSuite &middot; MIT licensed &middot; no analytics, no cookies</span>
+    <span><a href="./">Home</a> &middot; <a href="https://github.com/uSuite">GitHub</a> &middot; <a href="https://github.com/uSuite/usuite.github.io">This page's source</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
